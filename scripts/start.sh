@@ -1,3 +1,3 @@
 #!/bin/bash
-java -jar /appl/pinoypoetry-0.0.1.jar
+nohup java -jar /appl/pinoypoetry-0.0.1.jar
 
