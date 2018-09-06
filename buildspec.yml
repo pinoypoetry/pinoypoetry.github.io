@@ -9,3 +9,6 @@ artifacts:
     - target/pinoypoetry-0.0.1.jar
     - appspec.yml
     - scripts/start.sh
+cache:
+  paths:
+  - '/root/.m2/**/*'
