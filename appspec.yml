@@ -1,5 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: ./pinoypoetry-0.0.1.jar
-    destination: /tmp
+  - source: ./target/pinoypoetry-0.0.1.jar
+    destination: /appl
+hooks:
+  ApplicationStart:
+    - location: ./scripts/start.sh
+      timeout: 3600
