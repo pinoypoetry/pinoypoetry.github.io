@@ -7,3 +7,4 @@ phases:
 artifacts:
   files:
     - target/pinoypoetry-0.0.1.jar
+    - appspec.yml
