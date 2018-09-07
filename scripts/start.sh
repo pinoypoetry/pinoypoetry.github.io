@@ -1,14 +1,13 @@
 #!/bin/bash
-CATALINA_HOME= '/var/lib/tomcat8'
 CONTEXT_PATH='ROOT'
 # Remove Artifcats if available
-if [[ -f $CATALINA_HOME/webapps/$CONTEXT_PATH.war ]]; then
-    rm $CATALINA_HOME/webapps/$CONTEXT_PATH.war
+if [[ -f /var/lib/tomcat8/webapps/$CONTEXT_PATH.war ]]; then
+   sudo rm /var/lib/tomcat8/webapps/$CONTEXT_PATH.war
 fi
-if [[ -d $CATALINA_HOME/webapps/$CONTEXT_PATH ]]; then
-    rm -rfv $CATALINA_HOME/webapps/$CONTEXT_PATH
+if [[ -d /var/lib/tomcat8/webapps/$CONTEXT_PATH ]]; then
+   sudo  rm -rfv /var/lib/tomcat8/webapps/$CONTEXT_PATH
 fi
+sudo cp /appl/pinoypoetry*.war ROOT.war
+sudo cp /appl/ROOT.war /var/lib/tomcat8/webapps/
 
-cp /appl/pinoypoetry-1.0.1.war $CATALINA_HOME/webapps/$CONTEXT_PATH.war
-
-service tomcat8 start
+sudo service tomcat8 start
