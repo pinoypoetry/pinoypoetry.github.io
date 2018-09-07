@@ -1,5 +1,5 @@
 #!/bin/bash
-
+CATALINA_HOME= '/var/lib/tomcat8'
 CONTEXT_PATH='ROOT'
 # Remove Artifcats if available
 if [[ -f $CATALINA_HOME/webapps/$CONTEXT_PATH.war ]]; then
