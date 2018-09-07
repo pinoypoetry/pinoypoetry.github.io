@@ -5,8 +5,8 @@
 
 	<groupId>xyz.pinoypoetry</groupId>
 	<artifactId>pinoypoetry</artifactId>
-	<version>0.0.1</version>
-	<packaging>jar</packaging>
+	<version>1.0.0</version>
+	<packaging>war</packaging>
 
 	<name>pinoypoetry</name>
 	<description>Demo project for Spring Boot</description>

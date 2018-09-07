@@ -6,7 +6,7 @@ phases:
 
 artifacts:
   files:
-    - target/pinoypoetry-0.0.1.jar
+    - target/pinoypoetry-1.0.0.war
     - appspec.yml
     - scripts/start.sh
 cache:
