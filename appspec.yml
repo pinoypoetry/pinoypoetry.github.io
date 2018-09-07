@@ -5,7 +5,7 @@ files:
     destination: /appl
 hooks:
   ApplicationStop:
-    - location: scripts/stop_application
+    - location: ./scripts/stop.sh
       timeout: 300
   ApplicationStart:
     - location: ./scripts/start.sh
