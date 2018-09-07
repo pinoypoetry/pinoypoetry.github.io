@@ -9,6 +9,7 @@ artifacts:
     - target/pinoypoetry-1.0.0.war
     - appspec.yml
     - scripts/start.sh
+    - scripts/stop.sh
 cache:
   paths:
   - '/root/.m2/**/*'
