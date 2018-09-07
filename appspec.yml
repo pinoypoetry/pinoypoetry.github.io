@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: ./target/pinoypoetry-1.0.0.war
+  - source: ./target/pinoypoetry-1.0.1.war
     destination: /appl
 hooks:
   ApplicationStop:

@@ -9,6 +9,6 @@ if [[ -d $CATALINA_HOME/webapps/$CONTEXT_PATH ]]; then
     rm -rfv $CATALINA_HOME/webapps/$CONTEXT_PATH
 fi
 
-cp /appl/pinoypoetry-1.0.0.war $CATALINA_HOME/webapps/$CONTEXT_PATH.war
+cp /appl/pinoypoetry-1.0.1.war $CATALINA_HOME/webapps/$CONTEXT_PATH.war
 
 service tomcat8 start

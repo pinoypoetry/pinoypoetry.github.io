@@ -6,7 +6,7 @@ phases:
 
 artifacts:
   files:
-    - target/pinoypoetry-1.0.0.war
+    - target/pinoypoetry-1.0.1.war
     - appspec.yml
     - scripts/stop_please.sh
     - scripts/start.sh
