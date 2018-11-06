@@ -1,5 +1,7 @@
 package xyz.jansengoyena.pinoypoetry.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
@@ -11,8 +13,8 @@ public class Author {
     @GeneratedValue
     long id;
 
-    private String firstName;
-    private String lastName;
+
+    private String name;
     @Column(length = 500)
     private String authorBiographyLink;
 
@@ -22,30 +24,23 @@ public class Author {
                     CascadeType.MERGE
             },
             mappedBy = "authors")
+    @JsonIgnore
     List<Poem> poems;
 
     public Author(){}
 
-    public Author(String firstName, String lastName, String authorBiographyLink) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Author(String name, String authorBiographyLink) {
+
+        this.name= name;
         this.authorBiographyLink = authorBiographyLink;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAuthorBiographyLink() {
